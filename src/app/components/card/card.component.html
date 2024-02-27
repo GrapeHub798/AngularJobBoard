@@ -1,0 +1,17 @@
+<ng-container>
+  <div *ngIf="loading" class="card">
+    <div class="card-body">
+      <app-loading/>
+    </div>
+  </div>
+  <div *ngIf="!loading" class="card" (click)="openJobUrl()">
+    <div class="card-body">
+      <h5 class="card-title text-center mb-3">{{jobInfo?.parsedTitle}}</h5>
+      <p class="card-text text-center">{{jobInfo?.text}}</p>
+    </div>
+    <div class="card-footer text-center">
+      {{getDate()}}
+    </div>
+  </div>
+</ng-container>
+

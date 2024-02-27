@@ -1,0 +1,10 @@
+/* container */
+.three-columns {
+  display:flex;
+}
+
+/* columns */
+.three-columns > * {
+  width:calc(100% / 3);
+  padding:1rem;
+}
